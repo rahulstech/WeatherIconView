@@ -7,19 +7,16 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.github.pwittchen.weathericonview.library.R;
-
 /**
  * Weather Icon View allows you to create Weather Icon for your Android application
- * It's based on Erik Flowers project located at: https://github.com/erikflowers/weather-icons
- * This project is open-source and can be found at: https://github.com/pwittchen/WeatherIconView
+ * It's based on Erik Flowers project located at: <a href="https://github.com/erikflowers/weather-icons">...</a>
+ * This project is open-source and can be found at: <a href="https://github.com/pwittchen/WeatherIconView">...</a>
  * @author Piotr Wittchen
  */
 public class WeatherIconView extends TextView {
     private final static String PATH_TO_WEATHER_FONT = "fonts/weather.ttf";
     private final static int DEFAULT_WEATHER_ICON_SIZE = 100;
     private final static int DEFAULT_WEATHER_ICON_COLOR = Color.BLACK;
-    private Typeface weatherFont;
 
     public WeatherIconView(Context context) {
         super(context);
@@ -42,7 +39,7 @@ public class WeatherIconView extends TextView {
         if (isInEditMode()) {
             return;
         }
-        weatherFont = Typeface.createFromAsset(context.getAssets(), PATH_TO_WEATHER_FONT);
+        Typeface weatherFont = Typeface.createFromAsset(context.getAssets(), PATH_TO_WEATHER_FONT);
         setTypeface(weatherFont);
     }
 
@@ -81,7 +78,7 @@ public class WeatherIconView extends TextView {
     /**
      * sets weather icon basing on String resources
      * Icons are created from weather-icons TTF font by Erik Flowers
-     * Full icons reference can be found at: http://erikflowers.github.io/weather-icons/
+     * Full icons reference can be found at: <a href="http://erikflowers.github.io/weather-icons/">...</a>
      * @param iconCode icon code located in res/values/strings.xml file
      */
     public void setIconResource(String iconCode) {

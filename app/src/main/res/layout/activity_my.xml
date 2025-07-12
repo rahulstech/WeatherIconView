@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         custom:weatherIconResource="@string/wi_day_sunny_overcast"
-        custom:weatherIconColor="@android:color/black"
+        custom:weatherIconColor="@android:color/white"
         custom:weatherIconSize="100" />
 
 </RelativeLayout>
