@@ -8,7 +8,7 @@ android {
     compileSdk 36
 
     defaultConfig {
-        minSdk 9
+        minSdk 21
         targetSdk 36
         versionCode 2
         versionName "2.0.0"

@@ -23,7 +23,7 @@ Contents
 
 Contribution by [rahulstech](https://github.com/rahulstech)
 -----------------------------------------------------------
-1. Changed compileSdk and targetSdk to 36
+1. Changed minSdk to 21 and compileSdk to 36
 2. Changed gradle version to 8.7 and Android Gradle Plugin Version to 8.6.1
 3. Updated dependencies compatible with min and target sdk version
 

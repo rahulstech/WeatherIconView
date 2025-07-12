@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
@@ -29,4 +30,7 @@ android {
 
 dependencies {
     implementation project(':WeatherIconView-library')
+    implementation("androidx.appcompat:appcompat:1.7.1") {
+        exclude group: 'org.jetbrains.kotlin'
+    }
 }
