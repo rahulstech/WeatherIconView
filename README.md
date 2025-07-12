@@ -9,6 +9,7 @@ Weather Icon View is based on [Weather Icons](https://github.com/erikflowers/wea
 
 Contents
 --------
+- [Contribution by rahulstech](#contribution-by-rahulstech)
 - [Usage](#usage)
   - [In XML layout](#in-xml-layout)
   - [In Java code](#in-java-code)
@@ -19,6 +20,12 @@ Contents
 - [Who is using this library?](#who-is-using-this-library)
 - [References](#references) 
 - [License](#license)
+
+Contribution by [rahulstech](https://github.com/rahulstech)
+-----------------------------------------------------------
+1. Changed compileSdk and targetSdk to 36
+2. Changed gradle version to 8.7 and Android Gradle Plugin Version to 8.6.1
+3. Updated dependencies compatible with min and target sdk version
 
 Usage
 -----
@@ -65,23 +72,32 @@ Screenshot
 Download
 --------
 
-You can depend on the library through Maven:
+1. In project level _build.gradle_ add the following
+  ```groovy
+  repositories {
+   google()
+   mavenCentral()
+   maven { url 'https://jitpack.io' } // add this line
+  }
+  ```
 
-```xml
-<dependency>
-    <groupId>com.github.pwittchen</groupId>
-    <artifactId>weathericonview</artifactId>
-    <version>1.1.0</version>
-</dependency>
-```
+2. You can depend on the library through Maven:
 
-or through Gradle:
+  ```xml
+  <dependency>
+      <groupId>com.github.rahulstech</groupId>
+      <artifactId>weathericonview</artifactId>
+      <version>latest-version</version> 
+  </dependency>
+  ```
 
-```groovy
-dependencies {
-  compile 'com.github.pwittchen:weathericonview:1.1.0'
-}
-```
+  or through Gradle:
+  
+  ```groovy
+  dependencies {
+    compile 'com.github.rahulstech:weathericonview:<latest-version>'
+  }
+  ```
 
 Who is using this library?
 --------------------------
